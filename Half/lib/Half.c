@@ -2,7 +2,7 @@
 
 VALUE Half = Qnil;
 void Init_half();
-VALUE method_half(VALUE self, VALUE anObject)
+VALUE method_half(VALUE self, VALUE anObject);
 
 void Init_half() {
   Half = rb_define_module("Half");
@@ -10,7 +10,6 @@ void Init_half() {
 }
 
 VALUE method_half(VALUE self, VALUE inputArr) {
-  int N = RARRAY_LEN(inputArr);
-  printf(N)
-  return N
+  int N = rb_array_len(inputArr);
+  return N;
 }
