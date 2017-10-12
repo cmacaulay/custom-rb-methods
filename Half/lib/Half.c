@@ -12,4 +12,5 @@ void Init_half() {
 VALUE method_half(VALUE self, VALUE inputArr) {
   int N = RARRAY_LEN(inputArr);
   printf(N)
+  return N
 }
